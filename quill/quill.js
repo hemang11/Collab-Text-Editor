@@ -21,7 +21,7 @@ window.addEventListener('load', () => {
   let username;
   let title;
   let total_rooms=[];
-  const socket = io.connect('https://morning-bayou-80072.herokuapp.com/');
+  const socket = io.connect('https://tranquil-hollows-09110.herokuapp.com/');
 
   // room title
   const Title = document.getElementById('title');
