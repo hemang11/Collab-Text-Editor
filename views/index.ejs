@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+  <div id="root" class='container'>
+    <h1 class='text-center'>Collab</h1>
+    <p class='text-center lead'>A place where you can collaborate for free</p>
+  
+      <!-- <li><a href="/quill.html">Quill Binding</a></li>
+      <br><br> -->
+      <div class="row">
+        <div class="card form-group col-12 col-lg-5 ml-lg-5">
+          <div class="card-body">
+            <h2 class='card-title text-center'>Create Room</h2>
+            <form action="/room" method='GET'>
+              <input type="text" class='form-control align-self-center' placeholder='Username' name='username'>
+              <input type="submit" class='btn btn-block btn-primary mt-2 mb-3' value='Create Room'>
+            </form>
+          </div>
+        </div>
+        <div class='card form-group col-12 col-lg-5 ml-lg-3'>
+          <div class="card-body">
+            <h2 class='card-title text-center'>Join Room</h2>
+            <form action="/join" method='GET'>
+              <input type="text" class='form-control' placeholder='Username' name='username' required>
+              <input type="text" class='form-control my-2' placeholder='URL' name='url' required>
+              <input type="submit" class='btn btn-block btn-primary ' value='Join Room'>
+            </form>
+          </div>
+      </div>
+      </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

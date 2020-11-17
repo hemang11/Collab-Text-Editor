@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+}
+
+i{
+  color:#4F8DF5;
+  font-size: 30px;
+  margin-right: 0.85rem;
+}
+
+#editor {
+  width:80vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-left:20%;
+  margin-top:1%;
+  height: 83vh;
+  width:800px;
+  /* overflow-y: scroll; */
+  /* This hides the scrollBar */
+  overflow: hidden;
+}
+/* This is coming from DOM */
+/* .ql-toolbar{
+    height:15px
+} */
