@@ -1,5 +1,5 @@
 # Collab-Text-Editor
-- Live Demo [here](tranquil-hollows-09110.herokuapp.com/)
+- Live Demo [here](http://tranquil-hollows-09110.herokuapp.com/)
 - To test the App do the following<br>
 Clone the repo..
 ```
