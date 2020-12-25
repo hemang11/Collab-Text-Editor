@@ -35,12 +35,17 @@ app.get('/room/:id',(req,res)=>{
 
 app.get('/room',(req,res)=>{
   username = req.query.username
+  if(!username)username='Anonymous';
+  console.log('Username=',username)
   res.redirect(`/room/${uuidV4()}`)
 })
 
 app.get('/join',(req,res)=>{
   username = req.query.username
   url = req.query.url;
+  const roomID = url.split('/')[4];
+  console.log(roomID);
+  // console.log(username,url);
   res.redirect(`${url}`);
 })
 
@@ -48,11 +53,11 @@ app.get('/join',(req,res)=>{
 io.on('connection',socket =>{
   console.log('made socket connection');
   // handle diff rooms
-  console.log(roomID);
+  console.log('RoomID=',roomID);
   socket.join(roomID); // Joining room with name roomID
   socket.on('title',(title)=>{
     let obj = {roomID,username,title}
-    console.log(title);
+    console.log('Title = ',title);
     socket.broadcast.to(roomID).emit('room',obj) // Broadcasting the title to specific room
   });
   socket.emit('room',{roomID,username,title:'Untitled document'});

@@ -44,7 +44,6 @@ window.addEventListener('load', async () => {
   // Unique client Id --> ydoc.clientID
   // console.log(ydoc);
 
-  const quillEdtior = document.getElementById('editor')
   const saveAS = document.getElementById('saveAS');
 
   // SaveAS pdfcode
@@ -74,9 +73,9 @@ window.addEventListener('load', async () => {
     // pdf.save("download.pdf");
   }
 
-  // const editorContainer = document.createElement('div')
-  // editorContainer.setAttribute('id', 'editor')
-  // document.body.insertBefore(editorContainer, null)
+  const editorContainer = document.createElement('div')
+  editorContainer.setAttribute('id', 'editor')
+  document.body.insertBefore(editorContainer, null)
 
   var toolbarOptions = [
     [{ 'font': [] }],
@@ -97,7 +96,7 @@ window.addEventListener('load', async () => {
     ['clean']  
   ];
 
-  var editor = new Quill('#editor', {
+  var editor = new Quill(editorContainer, {
     theme: 'snow',
     modules: {
       cursors : true,
