@@ -20,7 +20,7 @@ window.addEventListener('load', async () => {
   let username;
   let title;
   let total_rooms=[];
-  const socket = io.connect('https://tranquil-hollows-09110.herokuapp.com/');  // Connecting to the server
+  const socket = io.connect();  // Connecting to the server No url is needed here
 
   // room title
   const Title = document.getElementById('title');
